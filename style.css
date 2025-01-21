@@ -1,0 +1,44 @@
+:root {
+  --white: #FFF;
+  --yellow: hsl(47, 88%, 63%);
+  --gray-500: hsl(0, 0%, 42%);
+  --gray-950: hsl(0, 0%, 7%);
+}
+body {
+  font-family: "Figtree", serif;
+  font-optical-sizing: auto;
+  font-weight: 500;
+  font-style: normal;
+  font-size: 1em; /* 16px */
+  line-height: 1.4;
+  color: var(--gray-950);
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  background-color: var(--yellow);
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+.main {
+  width: 21rem;
+  background-color: var(--white);
+  aspect-ratio: 0.74/1;
+  padding: 1.438rem;
+  border: solid 1px var(--gray-950);
+  border-radius: 1.25rem;
+}
+.main p {
+  font-size: 1rem;
+}
+.main__article-img {
+  width: 100%;
+  border-radius: 1rem;
+}
+.main__tag {
+
+}
+.attribution { padding-top: 1rem; text-align: center; }
+.attribution p { color: var(--gray-500); font-size: 0.75rem; }
+.attribution a { color: var(--gray-500); }
