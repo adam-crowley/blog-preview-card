@@ -25,6 +25,11 @@ h1 {
   font-size: 1.5rem;
   line-height: 1;
   font-weight: 800;
+  transition: color 0.2s;
+}
+h1:hover {
+  color: var(--yellow);
+  cursor: pointer;
 }
 p {
   font-size: 1rem;
@@ -34,12 +39,12 @@ p {
   width: 21rem;
   max-width: 75%;
   background-color: var(--white);
-  /* aspect-ratio: 0.74/1; */
   padding: 1.438rem;
   border: solid 1px var(--gray-950);
   border-radius: 1.25rem;
   box-shadow: 0.5rem 0.5rem 0px 0px var(--gray-950);
 }
+
 .main__content {
   padding: 1.25rem 0 0;
 }
@@ -65,14 +70,19 @@ p {
   margin-bottom: 1.5rem;
 }
 .main__avatar-group {
-  display: flex;
+  display: inline-flex;
   align-items: center;
+  cursor: pointer;
+}
+.main__avatar-group:hover span {
+  color: var(--yellow)
 }
 .main__avatar-group img {
   width: 1.875rem;
   padding-right: 0.75rem;
 }
 .main__avatar-group span {
+  transition: color 0.2s;
   font-weight: 800;
   font-size: 0.875rem;
 }
