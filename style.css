@@ -22,9 +22,14 @@ body {
   flex-direction: column;
 }
 h1 {
-  font-size: 1.5rem;
+  font-size: 1.313rem;
   line-height: 1;
   font-weight: 800;
+}
+@media (min-width: 768px) {
+  h1 {
+    font-size: 1.5rem;
+  } 
 }
 h1 a {
   transition: color 0.2s;
@@ -66,12 +71,23 @@ p {
  margin-bottom: 0.75rem;
 }
 .main__published {
-  font-size: 0.875rem;
+  font-size: 0.818rem;
   margin-bottom: 1.25rem;
 }
+@media (min-width: 768px) {
+  .main__published {
+    font-size: 0.875rem;
+  } 
+}
 .main__desc {
+  font-size: 0.875rem;
   color: var(--gray-500);
   margin-bottom: 1.5rem;
+}
+@media (min-width: 768px) {
+  .main__desc {
+    font-size: 1rem;
+  } 
 }
 .main__avatar-group a {
   display: inline-flex;
@@ -80,7 +96,7 @@ p {
   color: var(--gray-950);
   text-decoration: none;
 }
-.main__avatar-group:hover span {
+.main__avatar-group a:hover span {
   color: var(--yellow)
 }
 .main__avatar-group img {
